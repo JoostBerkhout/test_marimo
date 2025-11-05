@@ -1,0 +1,14 @@
+[project]
+name = "test-marimo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "marimo>=0.17.7",
+    "pyjobshop>=0.0.7",
+]
+
+
+[tool.marimo.runtime]
+pythonpath = ["src"]
