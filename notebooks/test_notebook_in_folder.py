@@ -57,7 +57,7 @@ def _(result):
 
 @app.cell
 def _():
-    print("Hoi Joost")
+    print("Hoi Joost: Hoe gaat het?")
     return
 
 
