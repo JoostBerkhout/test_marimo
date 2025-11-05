@@ -1,0 +1,5 @@
+site_name: test_marimo
+
+nav:
+  - Home: index.md
+  - Examples: examples.md

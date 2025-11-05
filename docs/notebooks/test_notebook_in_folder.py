@@ -1,14 +1,22 @@
 import marimo
 
 __generated_with = "0.17.7"
-app = marimo.App(width="medium")
+app = marimo.App(width="medium", auto_download=["html", "ipynb"])
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    This file can also be opened in molab which requires to first install pyjobshop, which takes around 50 seconds.
+    [![Open in molab](https://molab.marimo.io/molab-shield.png)](https://molab.marimo.io/notebooks/nb_UJ5NfkajNLCnUFn8SBMe5b)
+    """)
+    return
 
 
 @app.cell
 def _():
     import marimo as mo
-
-    return
+    return (mo,)
 
 
 @app.cell
@@ -57,7 +65,19 @@ def _(result):
 
 @app.cell
 def _():
-    print("Hoi Joost: Hoe gaat het?")
+    print("Hoi Joost")
+    return
+
+
+@app.cell
+def _():
+    print("Als het goed is wordt nu ook een html opgeslagen.")
+    return
+
+
+@app.cell
+def _():
+    print("Nieuwe stukje tekst om te checken of dit wordt opgeslagen.")
     return
 
 
